@@ -1,0 +1,107 @@
+/* Resetting default margin and padding */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333; /* Text color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #dee2e6; /* Header background color */
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  text-align: right;
+  
+  font-weight: bold;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #333; /* Menu item color */
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition on hover */
+  position: relative; /* Needed for positioning the white box overlay */
+}
+
+header nav ul li a:hover {
+  color: #000; /* Change text color on hover */
+}
+
+header nav ul li a:hover::before {
+  content: ""; /* Create the white box overlay */
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background-color: #fff; /* White background */
+  z-index: -1; /* Ensure the white box is behind the text */
+}
+
+.hero {
+  background-image: url("landingpage.jpeg"); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  padding: 200px 0; /* Increase the padding for a taller background */
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.cta {
+  margin-top: 40px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Hover background color */
+}
+
+footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Add padding for space */
+}

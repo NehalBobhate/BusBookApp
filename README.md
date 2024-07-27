@@ -1,2 +1,2 @@
-# BusBookApp
- It's a bus book application.
+# BusBook
+ It is a Bus Booking Web-Application
